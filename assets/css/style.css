@@ -11,6 +11,7 @@ html, body{
 body{
 	position: relative;
 	padding-bottom: 44px;
+	font-size: 16px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 *{
@@ -58,6 +59,8 @@ img{max-width: 100%;}
 	background-color: #333;
 }
 .menu{
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	text-align: center;
 }
@@ -69,7 +72,67 @@ img{max-width: 100%;}
 	display: block;
 	color: #fff;
 }
-
+.menu__link_active{
+	color: rgba(230,186,33,1);
+}
+/*-- Category page --*/
+.category__title{
+	margin: 0;
+	font-size: 2em;
+	line-height: 2em;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center;
+}
+.category__item{
+	float: left;
+	width: 24%;
+	margin: 0.5%;
+	border: 1px solid #d1d1d1;
+}
+.category__name{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+}
+.category__kitchen{
+	margin: 10px 0;
+}
+.category__text{
+	padding: 10px 15px;
+}
+.category__list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.category__schedule, .category__props{
+	float: left;
+	width: 50%;
+}
+.category__list-item:after,
+.category__list-item:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.category__list-icon{
+	float: left;
+}
+.category__props-text, .category__list-value{
+	float: left;
+}
+.category__props-text{
+	width: 65%;
+}
+.category__list-value{
+	width: 35%;
+}
+.category__list-value i{margin-right: 6px;}
+.category__list-value i:last-child{margin-right: 0;}
+.category__list-value_yes{color: green;}
+.category__list-value_no{color: red;}
 /*-- Enter page --*/
 .forms {
 	padding: 50px 0;
